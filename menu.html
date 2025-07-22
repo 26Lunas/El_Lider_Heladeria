@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Lider - Heladeria</title>
+    <!-- Bootstrap v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container-main">
+        <div class="menu-nav" id="menu-nav"></div>
+
+        <!-- Menu Section -->
+        <section class="container py-5">
+            <h2 class="text-center">Nuestro Menú 🔥</h2>
+            <p class="text-center text-muted">Explora nuestras delicias y haz tu pedido.</p>
+            <div class="d-flex justify-content-center mb-4">
+                <button class="btn btn-todo mx-2" data-category="all">Todos</button>
+                <button class="btn btn-infantiles mx-2" data-category="infantiles">Infantiles</button>
+            </div>
+            <div class="row text-center cont-card-product mt-4">
+                <!-- Nueva card -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="all">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/1.png" class="img-fluid" alt="Banana-split" style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Banana-split</p>
+                            <p class="card-text">
+                                <span class="desc-short">
+                                    Tres porciones de helado, aconpañado de banano...
+                                </span>
+                                <span class="desc-full d-none">
+                                    Tres porciones de helado, aconpañado de banano, chantilly, barquillo,
+                                    cereza, mini chips.
+                                </span>
+                                <a href="#" class="ver-mas">Ver más</a>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$11.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Banana-split"
+                                    data-precio="10000" data-img="images/1.png" data-variantes='[
+                                        {"nombre": "Banana-split", "precio": 11000}]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Nueva card -->
+                <!-- Repite la estructura de la card para los demás productos -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="all">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/2.png" class="img-fluid" alt="Salchipapas" style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Producto 2</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$10.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Salchipapas"
+                                    data-precio="10000" data-img="images/2.png" data-variantes='[
+                                        {"nombre": "Salchipapa Sencilla", "precio": 10000},
+                                        {"nombre": "Salchipapa chorizo y Butifarra", "precio": 12000},
+                                        {"nombre": "Salchipapa Carne, Pollo, Butifarra", "precio": 15000}
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="all">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/3.png" class="img-fluid" alt="Salchipapas" style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Producto 3</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$10.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Salchipapas"
+                                    data-precio="10000" data-img="images/3.png" data-variantes='[
+                                        {"nombre": "Salchipapa Sencilla", "precio": 10000},
+                                        {"nombre": "Salchipapa chorizo y Butifarra", "precio": 12000},
+                                        {"nombre": "Salchipapa Carne, Pollo, Butifarra", "precio": 15000}
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="all">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/4.png" class="img-fluid" alt="Salchipapas" style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Producto 4</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$10.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Salchipapas"
+                                    data-precio="10000" data-img="images/4.png" data-variantes='[
+                                        {"nombre": "Salchipapa Sencilla", "precio": 10000},
+                                        {"nombre": "Salchipapa chorizo y Butifarra", "precio": 12000},
+                                        {"nombre": "Salchipapa Carne, Pollo, Butifarra", "precio": 15000}
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="all">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/5.png" class="img-fluid" alt="Galleta" style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Galleta</p>
+                            <p class="card-text">
+                                <span class="desc-short">
+                                    Dos porciones de helados, galletas mini chips...
+                                </span>
+                                <span class="desc-full d-none">
+                                    Dos porciones de helados, galletas mini chips y oreo, cereza , salsas:
+                                    Arequipe y chocolate.
+                                </span>
+                                <a href="#" class="ver-mas">Ver más</a>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$12.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Galleta" data-precio="10000"
+                                    data-img="images/5.png" data-variantes='[
+                                        {"nombre": "Galleta", "precio": 12000}
+                                       
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="all">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/9.png" class="img-fluid" alt="Ensalada de frutas"
+                                style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Ensalada de frutas</p>
+                            <p class="card-text">
+                                <span class="desc-short">
+                                    Una porcion de helado, papaya, melon, mango...
+                                </span>
+                                <span class="desc-full d-none">
+                                    Una porcion de helado, papaya, melon, mango, manzana roja y verde, banana, salsa de
+                                    la casa, queso, cereal, chantilly, cereza, uva, lluvia de chocolate, barquillo.
+                                </span>
+                                <a href="#" class="ver-mas">Ver más</a>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$15.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Ensalada de frutas"
+                                    data-precio="15000" data-img="images/9.png" data-variantes='[
+                                        {"nombre": "Ensalada de frutas", "precio": 15000}
+                                       
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="infantiles">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/15.png" class="img-fluid" alt="Ratoncito"
+                                style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Ratoncito</p>
+                            <!-- <p class="card-text">
+                                <span class="desc-short">
+                                    Una porcion de helado, papaya, melon, mango...
+                                </span>
+                                <span class="desc-full d-none">
+                                    Una porcion de helado, papaya, melon, mango, manzana roja y verde, banana, salsa de
+                                    la casa, queso, cereal, chantilly, cereza, uva, lluvia de chocolate, barquillo.
+                                </span>
+                                <a href="#" class="ver-mas">Ver más</a>
+                            </p> -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$6.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Ratoncito"
+                                    data-precio="6000" data-img="images/15.png" data-variantes='[
+                                        {"nombre": "Ratoncito", "precio": 6000}
+                                       
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="infantiles">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/16.png" class="img-fluid" alt="Osito"
+                                style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Osito</p>
+                            <!-- <p class="card-text">
+                                <span class="desc-short">
+                                    Una porcion de helado, papaya, melon, mango...
+                                </span>
+                                <span class="desc-full d-none">
+                                    Una porcion de helado, papaya, melon, mango, manzana roja y verde, banana, salsa de
+                                    la casa, queso, cereal, chantilly, cereza, uva, lluvia de chocolate, barquillo.
+                                </span>
+                                <a href="#" class="ver-mas">Ver más</a>
+                            </p> -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$6.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Osito"
+                                    data-precio="6000" data-img="images/16.png" data-variantes='[
+                                        {"nombre": "Osito", "precio": 6000}
+                                       
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-4 fade show" data-category="infantiles">
+                    <div class="card-product w-100">
+                        <div class="fondo_img_product">
+                            <img src="images/17.png" class="img-fluid" alt="Pulpito"
+                                style="border-radius: 10px;">
+                        </div>
+
+                        <div class="text-product p-3">
+                            <p class="fw-bold fs-5 mb-1">Pulpito</p>
+                            <!-- <p class="card-text">
+                                <span class="desc-short">
+                                    Una porcion de helado, papaya, melon, mango...
+                                </span>
+                                <span class="desc-full d-none">
+                                    Una porcion de helado, papaya, melon, mango, manzana roja y verde, banana, salsa de
+                                    la casa, queso, cereal, chantilly, cereza, uva, lluvia de chocolate, barquillo.
+                                </span>
+                                <a href="#" class="ver-mas">Ver más</a>
+                            </p> -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <p class="fw-bold fs-5 mb-0">$6.000</p>
+                                    <!-- <small class="text-muted">+ $2 delivery</small> -->
+                                </div>
+                                <button class="btn btn-warning btn-pedir" data-producto="Pulpito"
+                                    data-precio="6000" data-img="images/17.png" data-variantes='[
+                                        {"nombre": "Pulpito", "precio": 6000}
+                                       
+                                    ]'>Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    <div class="footer" id="footer"></div>
+    <div id="modal-container"></div>
+    <div id="closed-modal-container"></div>
+
+    <!-- Bootstrap v5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/5fa549b2f9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
