@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 mensaje += `- Dirección: ${direccion}`;
                 // --- Fin del Mensaje Mejorado ---
                 
-                const numero = '573152854277';
+                const numero = '57';
                 const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
                 window.open(url, '_blank');
 
