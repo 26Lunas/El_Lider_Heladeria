@@ -208,6 +208,9 @@ body{
     background: linear-gradient(90deg, #e884f3 60%, #f5c0fa 100%);
     color: #fff;
 }
+.form-select{
+    display: none;
+}
 
 
 /* Fin card productos */

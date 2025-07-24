@@ -180,10 +180,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     comentarios: btn.getAttribute('data-comentarios')
                 };
                 const varianteSelect = document.getElementById('pedidoVariante');
-                varianteSelect.innerHTML = '<option value="">Selecciona una opción</option>';
+                varianteSelect.innerHTML = ''; // Clear existing options
                 productoActual.variantes.forEach(variante => {
                     varianteSelect.innerHTML += `<option value='${JSON.stringify(variante)}'>${variante.nombre} - $${variante.precio.toLocaleString()}</option>`;
                 });
+                // Automatically select the first variant if available
+                if (productoActual.variantes.length > 0) {
+                    varianteSelect.value = JSON.stringify(productoActual.variantes[0]);
+                }
                 document.getElementById('formPedido').reset();
                 document.getElementById('pedidoConfirmacion').classList.add('d-none');
                 // document.querySelectorAll('.adicionales-check').forEach(chk => chk.checked = false);
