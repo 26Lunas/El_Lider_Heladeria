@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 mensaje += `- Dirección: ${direccion}`;
                 // --- Fin del Mensaje Mejorado ---
                 
-                const numero = '57';
+                const numero = '573006482458';
                 const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
                 window.open(url, '_blank');
 
